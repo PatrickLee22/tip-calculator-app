@@ -8,7 +8,7 @@ import NumPeople from './components/NumPeople/NumPeople'
 import Results from './components/Results/Results'
 import Footer from './components/Footer/Footer'
 
-function App() {
+const App:React.FC = () => {
   const [values, setValues] = useState<State>({
     bill: 0,
     tipPercent: 0,
