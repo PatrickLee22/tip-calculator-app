@@ -1,0 +1,58 @@
+.results{
+    display: grid;
+    place-content: center;
+  
+    width: 80vw;
+    height: 30vh;
+    min-height: 330px;
+  
+    border-radius: 10px;
+    padding: 30px;
+  
+    background-color: var(--very-dark-cyan);
+    
+    font-size: 24px;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tip-result, .total-result{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.7rem; 
+  
+  }
+  
+  
+  .amount-label{
+    font-size: 24px;
+    color: var(--white);
+    margin: 0;
+  }
+  
+  .person-label{
+    color: var(--grayish-cyan);
+    font-size: 14px;
+  
+    margin: 0;
+  }
+  
+  .tip__amount, .total__amount{
+    color: var(--strong-cyan)
+  }
+  
+  .resetButton{
+    width: 100vw;
+  
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
+  }
+
+@media screen and (min-width: 820px){
+    .results{
+        width: 30vw;
+        height: 50vh;
+    }
+}
