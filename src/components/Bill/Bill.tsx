@@ -31,7 +31,8 @@ const Bill = ({values, setValues}: Props) => {
     }
 
     return (
-        <input 
+      <div className='bill'>
+          <input 
             type='number' 
             className="bill-input" 
             placeholder='0' 
@@ -39,8 +40,9 @@ const Bill = ({values, setValues}: Props) => {
             onChange={(e) => 
               setBill(e)
             }
-        >
-        </input>
+          >
+          </input>
+      </div>
     )
 
 }

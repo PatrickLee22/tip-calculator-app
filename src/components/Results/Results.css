@@ -2,7 +2,7 @@
     display: grid;
     place-content: center;
   
-    width: 80vw;
+    width: 70vw;
     height: 30vh;
     min-height: 330px;
   
@@ -22,7 +22,9 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.7rem; 
-  
+    
+    width: 56vw;
+
   }
   
   
@@ -45,6 +47,7 @@
   
   .resetButton{
     width: 100vw;
+    max-width: 56vw;
   
     color: var(--very-dark-cyan);
     background-color: var(--strong-cyan);
@@ -53,6 +56,22 @@
 @media screen and (min-width: 820px){
     .results{
         width: 30vw;
-        height: 50vh;
+        height: 46vh;
     }
+
+    .tip-result, .total-result{
+      width: 29vw;
+    }
+
+    .total-result{
+      margin-bottom: 5rem;
+    }
+
+    .resetButton{
+        width: 30vw;
+        max-width: 475px;
+    }
+
+
+      
 }

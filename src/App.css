@@ -10,8 +10,8 @@
   display: grid;
   place-items: center;
 
-  width: 100vw;
-
+  width: 90vw;
+  
   height: 100vh;
 
   min-height: 900px;
@@ -22,6 +22,11 @@
 
   color: var(--dark-grayish-cyan);
   background-color: var(--white);
+}
+
+.inputs div{
+  display: gird;
+  place-items: center;
 }
 
 label{
@@ -107,6 +112,8 @@ input{
   .calculator{
     display: grid;
     grid-template-columns: auto auto;
+
+    border-radius: 20px;
 
     place-items: center;
 
