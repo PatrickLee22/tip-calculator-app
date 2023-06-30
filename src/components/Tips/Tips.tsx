@@ -11,8 +11,8 @@ interface Props {
 
 const Tips = ({values, setValues}: Props) => {
 
-    function setTip(e: React.ChangeEvent<HTMLInputElement>) {
-        const currPercent = parseFloat(e.target.value)
+    function setTip(e: string) {
+        const currPercent = parseFloat(e)
     
         if(values.bill > 0 && currPercent > 0 && values.numPeople > 0){
           const tip = calcTip(values.bill, currPercent, values.numPeople)
@@ -33,10 +33,8 @@ const Tips = ({values, setValues}: Props) => {
 
     return (
         <div className='tips'
-            data-value={values.tipPercent || ''}
-            onClick={(e) =>
-                setTip(e)
-        }
+            data-value={values.tipPercent}
+            onClick={e => setTip((e.target as HTMLButtonElement).value)}
         >
             <button id='btn-models' value="0.05">5%</button>
             <button value="0.1">10%</button>

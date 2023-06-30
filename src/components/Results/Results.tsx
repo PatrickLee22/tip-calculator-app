@@ -41,7 +41,7 @@ const Results = ({values, setValues}:Props) => {
 
             <button 
                 className='resetButton'
-                onClick={(e) => resetState()}     
+                onClick={resetState}
             >
                 Reset
             </button>
